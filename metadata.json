@@ -1,0 +1,6 @@
+{
+  "name": "temir.az - Tikinti Materialları və Usta Xidməti",
+  "description": "Tikinti və təmir materiallarının onlayn mağazası və peşəkar usta xidmətləri platforması. Keyfiyyətli materiallar, sürətli çatdırılma və yoxlanılmış ustalar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

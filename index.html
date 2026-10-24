@@ -1,0 +1,1927 @@
+<!doctype html>
+<html lang="az" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temir.az - Tikinti Materialları və Usta Xidməti</title>
+    <meta name="description" content="Azərbaycanın ən böyük tikinti materialları və peşəkar usta platforması. 15,000+ sertifikatlı məhsul, 2 saatda çatdırılma və yoxlanılmış ustalar." />
+    <meta property="og:title" content="temir.az - Tikinti Materialları və Usta Xidməti" />
+    <meta property="og:description" content="Tikinti materiallarının zavod qiymətinə onlayn sifarişi və yoxlanılmış peşəkar ustalar." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                orange: '#FF5E1E',
+                orangeHover: '#FF6B00',
+                dark: '#0F1115',
+                card: '#161922',
+                cardHover: '#1E2330',
+              }
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        background-color: #0F1115;
+        color: #F1F5F9;
+      }
+      .glass-panel {
+        background: rgba(22, 25, 34, 0.82);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .glass-dropdown {
+        background: rgba(18, 21, 30, 0.96);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      ::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0F1115;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #252B3A;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FF5E1E;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="bg-[#0F1115] text-slate-100 antialiased selection:bg-[#FF5E1E] selection:text-white min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- TOP UTILITY ANNOUNCEMENT BAR -->
+    <div class="bg-[#141720] border-b border-white/5 text-xs text-slate-400 py-1.5 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1.5 text-slate-300">
+            <span class="inline-block w-2 h-2 rounded-full bg-[#FF5E1E] animate-pulse"></span>
+            <span>Bakı və Abşeron üzrə 2 saatda operativ çatdırılma</span>
+          </span>
+          <span class="hidden md:inline text-slate-600">/</span>
+          <span class="hidden md:flex items-center gap-1 text-slate-400">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#FF5E1E]"></i>
+            <span>3,500+ Yoxlanılmış sertifikatlı usta</span>
+          </span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="tel:*1818" class="flex items-center gap-1.5 text-[#FF5E1E] font-bold hover:underline">
+            <i data-lucide="phone" class="w-3 h-3"></i>
+            <span>Qaynar xətt: *1818</span>
+          </a>
+          <span class="hidden sm:inline text-slate-600">|</span>
+          <span class="hidden sm:inline text-slate-400">AZN ₼</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header id="main-header" class="sticky top-0 z-40 bg-[#0F1115]/95 backdrop-blur-xl border-b border-white/5 transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+        <div class="flex items-center justify-between gap-3 lg:gap-6">
+          
+          <!-- Brand Logo -->
+          <a href="#" class="flex items-center gap-2 shrink-0 group">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FF5E1E] to-[#FF8C00] flex items-center justify-center shadow-lg shadow-[#FF5E1E]/20 group-hover:scale-105 transition-transform">
+              <span class="font-extrabold text-white text-xl tracking-tighter">T</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl font-extrabold tracking-tight text-white flex items-center">
+                temir<span class="text-[#FF5E1E]">.az</span>
+              </span>
+              <span class="text-[10px] uppercase tracking-wider text-slate-400 font-medium -mt-1 hidden sm:block">
+                Tikinti & Ustalar
+              </span>
+            </div>
+          </a>
+
+          <!-- Catalog Button -->
+          <button
+            onclick="openModal('catalog-modal')"
+            class="hidden sm:flex items-center gap-2 px-4 py-2.5 bg-[#FF5E1E] hover:bg-[#FF6B00] text-white rounded-xl font-semibold text-sm transition-all shadow-md shadow-[#FF5E1E]/25 hover:shadow-[#FF5E1E]/40 active:scale-95 shrink-0"
+          >
+            <i data-lucide="layout-grid" class="w-4 h-4"></i>
+            <span>Kataloq</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-80"></i>
+          </button>
+
+          <!-- Search Bar with Live Suggestions -->
+          <div class="relative flex-1 max-w-xl hidden md:block">
+            <div class="relative flex items-center">
+              <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 pointer-events-none"></i>
+              <input
+                id="search-input"
+                type="text"
+                placeholder="15,000+ material, brend və ya usta axtar (məs: Ağdağ, Knauf, sement)..."
+                oninput="handleSearchInput(this.value)"
+                onfocus="showSearchDropdown(true)"
+                class="w-full bg-[#161922] border border-white/10 hover:border-white/20 focus:border-[#FF5E1E] text-sm text-slate-100 rounded-xl pl-10 pr-10 py-2.5 outline-none transition-all placeholder:text-slate-500"
+              />
+              <button
+                id="clear-search-btn"
+                onclick="clearSearch()"
+                class="hidden absolute right-3 text-slate-400 hover:text-white text-xs p-1"
+              >
+                <i data-lucide="x" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <!-- Instant Search Dropdown Suggestions -->
+            <div id="search-dropdown" class="hidden absolute left-0 right-0 top-full mt-2 glass-dropdown rounded-2xl shadow-2xl p-3 z-50">
+              <div id="search-results-box" class="space-y-1"></div>
+            </div>
+          </div>
+
+          <!-- Action Links & Buttons -->
+          <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+            <a href="#masters" class="hidden lg:flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-[#FF5E1E] transition-colors px-2 py-1.5">
+              <span>Bütün ustalar</span>
+            </a>
+            <a href="#products" class="hidden xl:flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-[#FF5E1E] transition-colors px-2 py-1.5">
+              <i data-lucide="percent" class="w-3.5 h-3.5 text-[#FF5E1E]"></i>
+              <span>Endirimlər</span>
+            </a>
+            <a href="#calculator" class="hidden xl:flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-[#FF5E1E] transition-colors px-2 py-1.5">
+              <i data-lucide="calculator" class="w-3.5 h-3.5 text-slate-400"></i>
+              <span>Kalkulyator</span>
+            </a>
+
+            <!-- Profile / Login -->
+            <button
+              onclick="openModal('auth-modal')"
+              class="flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl text-slate-300 hover:text-white bg-[#161922] hover:bg-[#1C212B] border border-white/10 transition-colors text-sm font-medium"
+            >
+              <i data-lucide="user" class="w-4 h-4 text-slate-400"></i>
+              <span id="nav-user-label" class="hidden sm:inline">Daxil ol</span>
+            </button>
+
+            <!-- Cart Button -->
+            <button
+              onclick="toggleCart(true)"
+              class="relative flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl bg-[#1C212B] hover:bg-[#252B38] border border-white/10 text-white transition-all group"
+              aria-label="Səbət"
+            >
+              <div class="relative">
+                <i data-lucide="shopping-cart" class="w-5 h-5 text-[#FF5E1E] group-hover:scale-110 transition-transform"></i>
+                <span id="nav-cart-badge" class="absolute -top-2.5 -right-2.5 bg-[#FF5E1E] text-white text-[11px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center ring-2 ring-[#0F1115] tabular-nums">0</span>
+              </div>
+              <div class="hidden md:flex flex-col text-left leading-tight">
+                <span class="text-[11px] text-slate-400">Səbət</span>
+                <span id="nav-cart-total" class="text-xs font-bold text-white tabular-nums">0.00 ₼</span>
+              </div>
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <button
+              onclick="toggleMobileMenu()"
+              class="p-2 md:hidden text-slate-300 hover:text-white rounded-lg bg-white/5"
+              aria-label="Menu"
+            >
+              <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Search Input -->
+        <div class="mt-2.5 md:hidden">
+          <div class="relative flex items-center">
+            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 pointer-events-none"></i>
+            <input
+              type="text"
+              placeholder="Material və ya usta axtar..."
+              oninput="handleSearchInput(this.value)"
+              class="w-full bg-[#161922] border border-white/10 text-sm text-slate-100 rounded-xl pl-10 pr-4 py-2 outline-none"
+            />
+          </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden mt-3 p-4 glass-dropdown rounded-2xl border border-white/10 flex flex-col gap-3">
+          <button
+            onclick="toggleMobileMenu(); openModal('catalog-modal');"
+            class="flex items-center justify-between p-2.5 bg-[#FF5E1E] text-white rounded-xl font-semibold text-sm"
+          >
+            <span class="flex items-center gap-2">
+              <i data-lucide="layout-grid" class="w-4 h-4"></i> Bütün Məhsul Kataloqu
+            </span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+          <a href="#masters" onclick="toggleMobileMenu()" class="flex items-center gap-2 p-2.5 text-slate-200 hover:bg-white/5 rounded-xl font-medium text-sm">
+            <i data-lucide="users" class="w-4 h-4 text-[#FF5E1E]"></i>
+            <span>Bütün Peşəkar Ustalar</span>
+          </a>
+          <a href="#products" onclick="toggleMobileMenu()" class="flex items-center gap-2 p-2.5 text-slate-200 hover:bg-white/5 rounded-xl font-medium text-sm">
+            <i data-lucide="percent" class="w-4 h-4 text-[#FF5E1E]"></i>
+            <span>Endirimli Məhsullar</span>
+          </a>
+          <a href="#calculator" onclick="toggleMobileMenu()" class="flex items-center gap-2 p-2.5 text-slate-200 hover:bg-white/5 rounded-xl font-medium text-sm">
+            <i data-lucide="calculator" class="w-4 h-4 text-[#FF5E1E]"></i>
+            <span>Təmir və Material Kalkulyatoru</span>
+          </a>
+          <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <a href="tel:*1818" class="text-[#FF5E1E] font-bold flex items-center gap-1">
+              <i data-lucide="phone" class="w-3.5 h-3.5"></i> Qaynar xətt: *1818
+            </a>
+            <span>Bakı, Azərbaycan</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+
+      <!-- HERO BANNER / ENDİRİMLƏR SLIDER -->
+      <section class="relative overflow-hidden pt-4 pb-8 lg:pt-6 lg:pb-12">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-[#FF5E1E]/15 to-transparent blur-[120px] pointer-events-none -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-[#141720]">
+            <div class="relative h-[480px] sm:h-[420px] lg:h-[460px] w-full">
+              
+              <!-- Slide 1 -->
+              <div id="slide-0" class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-100 z-10">
+                <img
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80"
+                  alt="Bahar Təmiri Kampaniyası"
+                  class="absolute inset-0 w-full h-full object-cover filter brightness-[0.38] contrast-125"
+                />
+                <div class="absolute inset-0 bg-gradient-to-r from-[#0F1115] via-[#0F1115]/85 to-transparent z-10"></div>
+                <div class="relative z-20 h-full flex flex-col justify-center max-w-2xl px-6 sm:px-12 py-8">
+                  <div class="inline-flex items-center gap-2 mb-3">
+                    <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FF5E1E]/20 text-[#FF5E1E] border border-[#FF5E1E]/40">
+                      Mövsüm Kampaniyası
+                    </span>
+                    <span class="text-xs text-slate-300 font-medium hidden sm:inline">
+                      2 saatda pulsuz çatdırılma (150 ₼-dən yuxarı)
+                    </span>
+                  </div>
+                  <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                    Bahar Təmiri: Bütün Suvaq və Boyalarda 25%-dək Endirim
+                  </h1>
+                  <p class="text-sm sm:text-base text-slate-300 line-clamp-3 mb-6 font-normal leading-relaxed max-w-xl">
+                    Mətanət A, DYO, Ağdağ və Sika məhsullarını birbaşa distribütor qiymətinə əldə edin. Bakı və Abşeron üzrə 2 saatda ünvana çatdırılma.
+                  </p>
+                  <div class="flex flex-wrap items-center gap-3">
+                    <a href="#products" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#FF5E1E] hover:bg-[#FF6B00] text-white font-bold text-sm shadow-lg shadow-[#FF5E1E]/30 transition-all hover:scale-[1.02] active:scale-95">
+                      <span>Endirimli Məhsullara Bax</span>
+                      <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <button onclick="openModal('catalog-modal')" class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm backdrop-blur-md border border-white/10 transition-colors">
+                      Kataloqu Aç
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div id="slide-1" class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none z-10">
+                <img
+                  src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80"
+                  alt="Peşəkar Usta Xidməti"
+                  class="absolute inset-0 w-full h-full object-cover filter brightness-[0.38] contrast-125"
+                />
+                <div class="absolute inset-0 bg-gradient-to-r from-[#0F1115] via-[#0F1115]/85 to-transparent z-10"></div>
+                <div class="relative z-20 h-full flex flex-col justify-center max-w-2xl px-6 sm:px-12 py-8">
+                  <div class="inline-flex items-center gap-2 mb-3">
+                    <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FF5E1E]/20 text-[#FF5E1E] border border-[#FF5E1E]/40">
+                      Etibarlı Usta Xidməti
+                    </span>
+                    <span class="text-xs text-slate-300 font-medium hidden sm:inline">
+                      3,500+ sertifikatlı usta & zəmanətli xidmət
+                    </span>
+                  </div>
+                  <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                    Peşəkar və Yoxlanılmış Ustalar Bir Zənglə Ünvanda
+                  </h1>
+                  <p class="text-sm sm:text-base text-slate-300 line-clamp-3 mb-6 font-normal leading-relaxed max-w-xl">
+                    Santexnik, elektrik, rəngsaz və kafel ustaları reytinq və real müştəri rəyləri ilə. Qiymətləri müqayisə edin və dərhal əlaqə saxlayın.
+                  </p>
+                  <div class="flex flex-wrap items-center gap-3">
+                    <a href="#masters" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#FF5E1E] hover:bg-[#FF6B00] text-white font-bold text-sm shadow-lg shadow-[#FF5E1E]/30 transition-all hover:scale-[1.02] active:scale-95">
+                      <span>Bütün Ustalara Bax</span>
+                      <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#calculator" class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm backdrop-blur-md border border-white/10 transition-colors">
+                      Təmir Smetası Hesabla
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div id="slide-2" class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none z-10">
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+                  alt="Açar Təhvili Təmir"
+                  class="absolute inset-0 w-full h-full object-cover filter brightness-[0.38] contrast-125"
+                />
+                <div class="absolute inset-0 bg-gradient-to-r from-[#0F1115] via-[#0F1115]/85 to-transparent z-10"></div>
+                <div class="relative z-20 h-full flex flex-col justify-center max-w-2xl px-6 sm:px-12 py-8">
+                  <div class="inline-flex items-center gap-2 mb-3">
+                    <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FF5E1E]/20 text-[#FF5E1E] border border-[#FF5E1E]/40">
+                      Açar Təhvili Təmir
+                    </span>
+                    <span class="text-xs text-slate-300 font-medium hidden sm:inline">
+                      Faizsiz 6 aylıq hissə-hissə ödəniş imkanı
+                    </span>
+                  </div>
+                  <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                    0% Komissiya ilə Tam Mənzil Təmiri və Smeta
+                  </h1>
+                  <p class="text-sm sm:text-base text-slate-300 line-clamp-3 mb-6 font-normal leading-relaxed max-w-xl">
+                    Material seçimi, usta briqadası və keyfiyyətə nəzarət hamısı temir.az tək platformasında. Təmir kalkulyatoru ilə dəqiq xərcləri çıxarın.
+                  </p>
+                  <div class="flex flex-wrap items-center gap-3">
+                    <a href="#calculator" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#FF5E1E] hover:bg-[#FF6B00] text-white font-bold text-sm shadow-lg shadow-[#FF5E1E]/30 transition-all hover:scale-[1.02] active:scale-95">
+                      <span>Kalkulyatoru Sına</span>
+                      <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#masters" class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm backdrop-blur-md border border-white/10 transition-colors">
+                      Usta Briqadası Seç
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <div class="absolute right-6 bottom-6 z-20 flex items-center gap-2">
+                <button onclick="prevSlide()" class="w-10 h-10 rounded-xl bg-black/50 hover:bg-[#FF5E1E] text-white backdrop-blur-md border border-white/10 flex items-center justify-center transition-colors" aria-label="Əvvəlki">
+                  <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                </button>
+                <button onclick="nextSlide()" class="w-10 h-10 rounded-xl bg-black/50 hover:bg-[#FF5E1E] text-white backdrop-blur-md border border-white/10 flex items-center justify-center transition-colors" aria-label="Növbəti">
+                  <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </button>
+              </div>
+
+              <!-- Indicators -->
+              <div class="absolute left-6 sm:left-12 bottom-6 z-20 flex items-center gap-2">
+                <button onclick="setSlide(0)" id="dot-0" class="h-2 rounded-full transition-all duration-300 w-8 bg-[#FF5E1E]"></button>
+                <button onclick="setSlide(1)" id="dot-1" class="h-2 rounded-full transition-all duration-300 w-2 bg-white/30 hover:bg-white/50"></button>
+                <button onclick="setSlide(2)" id="dot-2" class="h-2 rounded-full transition-all duration-300 w-2 bg-white/30 hover:bg-white/50"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Trust KPI Highlights -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-4 sm:mt-6">
+            <div class="glass-panel rounded-2xl p-4 sm:p-5 flex items-start gap-3.5 transition-all hover:border-white/20">
+              <div class="w-10 h-10 rounded-xl bg-[#1C212B] border border-white/10 flex items-center justify-center shrink-0 text-[#FF5E1E]">
+                <i data-lucide="truck" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-lg sm:text-xl font-extrabold text-white tracking-tight tabular-nums">15,000+</div>
+                <div class="text-xs sm:text-sm font-semibold text-slate-200">Tikinti materialı</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Orijinal zavod məhsulları</div>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-4 sm:p-5 flex items-start gap-3.5 transition-all hover:border-white/20">
+              <div class="w-10 h-10 rounded-xl bg-[#1C212B] border border-white/10 flex items-center justify-center shrink-0 text-[#FF5E1E]">
+                <i data-lucide="wrench" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-lg sm:text-xl font-extrabold text-white tracking-tight tabular-nums">3,500+</div>
+                <div class="text-xs sm:text-sm font-semibold text-slate-200">Peşəkar usta</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Reytinqli və yoxlanılmış</div>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-4 sm:p-5 flex items-start gap-3.5 transition-all hover:border-white/20">
+              <div class="w-10 h-10 rounded-xl bg-[#1C212B] border border-white/10 flex items-center justify-center shrink-0 text-[#FF5E1E]">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-lg sm:text-xl font-extrabold text-white tracking-tight tabular-nums">2 saat</div>
+                <div class="text-xs sm:text-sm font-semibold text-slate-200">Ekspress çatdırılma</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Bakı və Abşeron üzrə</div>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-4 sm:p-5 flex items-start gap-3.5 transition-all hover:border-white/20">
+              <div class="w-10 h-10 rounded-xl bg-[#1C212B] border border-white/10 flex items-center justify-center shrink-0 text-[#FF5E1E]">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-lg sm:text-xl font-extrabold text-white tracking-tight tabular-nums">98.6%</div>
+                <div class="text-xs sm:text-sm font-semibold text-slate-200">Müştəri məmnuniyyəti</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">24,000+ tamamlanmış sifariş</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCT CATEGORIES GRID -->
+      <section id="categories" class="py-8 sm:py-12 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+            <div>
+              <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF5E1E] mb-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#FF5E1E]"></span>
+                Əsas Kateqoriyalar
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                Tikinti və Təmir Materialları
+              </h2>
+              <p class="text-sm text-slate-400 mt-1 max-w-xl">
+                Bünövrədən açar təhvili təmirədək zəruri olan bütün sertifikatlı məhsul qrupları
+              </p>
+            </div>
+            <button onclick="filterCategory('all')" class="text-xs sm:text-sm font-semibold text-[#FF5E1E] hover:text-[#FF6B00] transition-colors flex items-center gap-1.5 shrink-0">
+              <span>Bütün kataloq</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <div id="categories-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5"></div>
+        </div>
+      </section>
+
+      <!-- DISCOUNTED PRODUCTS & CATALOG GRID -->
+      <section id="products" class="py-10 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+              <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF5E1E] mb-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#FF5E1E]"></span>
+                Kataloq & Xüsusi Təkliflər
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                Sertifikatlı Tikinti Materialları
+              </h2>
+              <p class="text-sm text-slate-400 mt-1">
+                Topdan və pərakəndə zavod qiymətləri, qaimə-faktura və ünvana operativ çatdırılma
+              </p>
+            </div>
+
+            <!-- Sort Dropdown -->
+            <div class="flex items-center gap-3">
+              <span class="text-xs text-slate-400 font-medium flex items-center gap-1.5 shrink-0">
+                <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5"></i>
+                <span>Sıralama:</span>
+              </span>
+              <select
+                id="sort-select"
+                onchange="handleSortChange(this.value)"
+                class="bg-[#161922] border border-white/10 hover:border-white/20 text-xs sm:text-sm text-slate-200 rounded-xl px-3 py-2 outline-none cursor-pointer focus:border-[#FF5E1E] transition-colors"
+              >
+                <option value="default">Seçilmişlər</option>
+                <option value="discount">Ən çox endirim</option>
+                <option value="price-asc">Qiymət: Ucuzdan bahaya</option>
+                <option value="price-desc">Qiymət: Bahadan ucuza</option>
+                <option value="rating">Müştəri reytinqi</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div id="product-category-tabs" class="flex items-center gap-1.5 overflow-x-auto pb-3 mb-6 no-scrollbar"></div>
+
+          <!-- Brand Filter Chips -->
+          <div id="brand-filter-chips" class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 text-xs text-slate-400 no-scrollbar"></div>
+
+          <!-- Products Grid Container -->
+          <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6"></div>
+        </div>
+      </section>
+
+      <!-- MASTERS MARKETPLACE SECTION -->
+      <section id="masters" class="py-12 sm:py-20 bg-[#0C0E12] border-t border-b border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+              <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF5E1E] mb-2">
+                <i data-lucide="user-check" class="w-4 h-4 text-[#FF5E1E]"></i>
+                Peşəkar Usta Birjası
+              </div>
+              <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+                Yoxlanılmış və Reytinqli Ustalar
+              </h2>
+              <p class="text-sm text-slate-400 mt-1 max-w-2xl">
+                Təcrübəli ustaları birbaşa sifariş edin, qiymətləri müqayisə edin və zəmanətli təmir təcrübəsi yaşayın. Heç bir vasitəçi komissiyası yoxdur.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400 bg-white/5 px-3 py-2 rounded-xl shrink-0">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Şəxsiyyət və təcrübə sənədləri yoxlanılıb</span>
+            </div>
+          </div>
+
+          <!-- Master Specialties Tabs -->
+          <div id="masters-specialties-tabs" class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar"></div>
+
+          <!-- Masters Grid -->
+          <div id="masters-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+          <!-- Master Register Banner -->
+          <div class="mt-12 rounded-3xl p-6 sm:p-8 bg-gradient-to-r from-[#1E2330] to-[#161922] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+            <div class="max-w-xl">
+              <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">
+                Siz də peşəkar ustasınız və ya təmir briqadasısınız?
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                temir.az platformasına qoşularaq hər gün yüzlərlə mənzil sahibindən birbaşa sifarişlər qəbul edin. Qeydiyyat tam ödənişsizdir.
+              </p>
+            </div>
+            <a href="tel:*1818" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-100 text-[#0F1115] font-bold text-xs sm:text-sm transition-all shadow-lg shrink-0 flex items-center gap-2">
+              <i data-lucide="briefcase" class="w-4 h-4 text-[#FF5E1E]"></i>
+              <span>Usta kimi qeydiyyatdan keç</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE MATERIAL CALCULATOR -->
+      <section id="calculator" class="py-12 sm:py-20 border-b border-white/5 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF5E1E] mb-2">
+              <i data-lucide="calculator" class="w-4 h-4 text-[#FF5E1E]"></i>
+              Ağıllı Təmir Kalkulyatoru
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Tikinti Materiallarını Dəqiq Hesabla
+            </h2>
+            <p class="text-sm text-slate-400 mt-2">
+              Artıq və ya əskik material almaqdan qorxmayın. Sahəni daxil edin, sistem sizə lazım olan miqdarı və dəyəri avtomatik hesablasın.
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 shadow-2xl">
+            <!-- Mode Switcher -->
+            <div class="flex p-1.5 bg-[#0F1115] rounded-2xl mb-8 max-w-md mx-auto border border-white/5">
+              <button onclick="setCalcTab('suvaq')" id="calc-tab-suvaq" class="flex-1 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-[#FF5E1E] text-white shadow-md transition-all">
+                Suvaq (Ağdağ)
+              </button>
+              <button onclick="setCalcTab('boya')" id="calc-tab-boya" class="flex-1 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-all">
+                Boya & Emulsiya
+              </button>
+              <button onclick="setCalcTab('kafel')" id="calc-tab-kafel" class="flex-1 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-all">
+                Kafel & Sika
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div class="space-y-6">
+                <div>
+                  <div class="flex justify-between text-xs sm:text-sm font-semibold text-slate-200 mb-2">
+                    <span>Təmir sahəsi (kvadrat metr):</span>
+                    <span id="calc-area-val" class="text-[#FF5E1E] font-bold tabular-nums">60 m²</span>
+                  </div>
+                  <input
+                    id="calc-area-input"
+                    type="range"
+                    min="5"
+                    max="300"
+                    step="5"
+                    value="60"
+                    oninput="updateCalculator()"
+                    class="w-full accent-[#FF5E1E] bg-white/10 h-2 rounded-lg cursor-pointer"
+                  />
+                  <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+                    <span>5 m²</span>
+                    <span>150 m²</span>
+                    <span>300 m²</span>
+                  </div>
+                </div>
+
+                <!-- Suvaq specific options -->
+                <div id="calc-suvaq-opts">
+                  <div class="flex justify-between text-xs sm:text-sm font-semibold text-slate-200 mb-2">
+                    <span>Orta suvaq qalınlığı:</span>
+                    <span id="calc-thickness-val" class="text-[#FF5E1E] font-bold tabular-nums">15 mm</span>
+                  </div>
+                  <input
+                    id="calc-thickness-input"
+                    type="range"
+                    min="5"
+                    max="30"
+                    step="5"
+                    value="15"
+                    oninput="updateCalculator()"
+                    class="w-full accent-[#FF5E1E] bg-white/10 h-2 rounded-lg cursor-pointer"
+                  />
+                  <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+                    <span>5 mm (Nazik)</span>
+                    <span>15 mm (Standart)</span>
+                    <span>30 mm (Qalın)</span>
+                  </div>
+                </div>
+
+                <!-- Boya specific options -->
+                <div id="calc-boya-opts" class="hidden">
+                  <div class="flex justify-between text-xs sm:text-sm font-semibold text-slate-200 mb-2">
+                    <span>Rəngləmə qatlarının sayı:</span>
+                    <span id="calc-coats-val" class="text-[#FF5E1E] font-bold tabular-nums">2 qat</span>
+                  </div>
+                  <div class="flex gap-3">
+                    <button type="button" onclick="setCoats(1)" id="coat-btn-1" class="flex-1 py-2 rounded-xl text-xs font-bold border border-white/10 bg-white/5 text-slate-300">1 Qat</button>
+                    <button type="button" onclick="setCoats(2)" id="coat-btn-2" class="flex-1 py-2 rounded-xl text-xs font-bold border border-[#FF5E1E] bg-[#FF5E1E] text-white">2 Qat</button>
+                    <button type="button" onclick="setCoats(3)" id="coat-btn-3" class="flex-1 py-2 rounded-xl text-xs font-bold border border-white/10 bg-white/5 text-slate-300">3 Qat</button>
+                  </div>
+                </div>
+
+                <!-- Kafel note -->
+                <div id="calc-kafel-opts" class="hidden p-4 rounded-xl bg-white/5 border border-white/5 text-xs text-slate-300 space-y-1">
+                  <div class="font-semibold text-white">Avtomatik ehtiyat payı:</div>
+                  <p class="text-slate-400">
+                    Künc kəsimləri və sınıqlar üçün hesablamaya avtomatik +10% ehtiyat kafel əlavə olunub.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Output calculation -->
+              <div class="bg-[#10131B] rounded-2xl p-6 border border-white/10 space-y-4">
+                <div class="text-xs font-bold uppercase tracking-wider text-slate-400">
+                  Hesablanmış Tələbat:
+                </div>
+                <div id="calc-result-lines" class="space-y-3"></div>
+                <button
+                  id="calc-add-btn"
+                  onclick="addCalculatedMaterialsToCart()"
+                  class="w-full mt-4 py-3 rounded-xl font-bold text-xs sm:text-sm bg-[#FF5E1E] hover:bg-[#FF6B00] text-white shadow-lg shadow-[#FF5E1E]/25 transition-all flex items-center justify-center gap-2"
+                >
+                  <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                  <span>Bu materialları səbətə əlavə et</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APP DOWNLOAD SHOWCASE -->
+      <section id="app-download" class="py-12 sm:py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="relative rounded-3xl overflow-hidden glass-panel border border-white/10 p-8 sm:p-12 lg:p-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FF5E1E]/20 text-[#FF5E1E] border border-[#FF5E1E]/40">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                  <span>Mobil Tətbiq</span>
+                </div>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+                  temir.az Hər An Əlinizin Altında
+                </h2>
+                <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
+                  Tikinti obyektindən və ya evdən çıxmadan minlərlə materialı sifariş edin, ən yaxın sərbəst ustanı xəritədə tapın və sifariş statusunu real vaxtda izləyin.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-300">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">✓</div>
+                    <span>1 kliklə təkrar material sifarişi</span>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">✓</div>
+                    <span>Usta ilə daxili çatlarda birbaşa əlaqə</span>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">✓</div>
+                    <span>Eksklüziv tətbiqdaxili 5-15% endirimlər</span>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">✓</div>
+                    <span>GPS vasitəsilə ünvana dəqiq çatdırılma</span>
+                  </div>
+                </div>
+
+                <div class="pt-4 flex flex-wrap items-center gap-4">
+                  <!-- App Store -->
+                  <a href="#app-download" class="flex items-center gap-3 px-5 py-3 rounded-2xl bg-black hover:bg-neutral-900 border border-white/20 text-white transition-all shadow-lg hover:scale-105 active:scale-95">
+                    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.78 1.06-1.87.94-2.97-1 .04-2.15.67-2.82 1.45-.58.67-1.1 1.76-.96 2.83 1.11.09 2.21-.53 2.84-1.31z"/></svg>
+                    <div class="text-left">
+                      <div class="text-[10px] text-slate-400 uppercase leading-none font-medium">Download on the</div>
+                      <div class="text-sm font-bold leading-tight">App Store</div>
+                    </div>
+                  </a>
+
+                  <!-- Google Play -->
+                  <a href="#app-download" class="flex items-center gap-3 px-5 py-3 rounded-2xl bg-black hover:bg-neutral-900 border border-white/20 text-white transition-all shadow-lg hover:scale-105 active:scale-95">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186c-.347-.365-.544-.888-.544-1.488V3.302c0-.6.197-1.123.543-1.488zm11.235 11.238l2.25 2.25-10.74 6.202 8.49-8.452zm0-2.104L6.354 2.496l10.74 6.202-2.25 2.25zm1.539 1.052l3.418-1.973c.712-.411.712-1.085 0-1.496l-3.418-1.973-1.539 1.54 1.539 1.54z"/></svg>
+                    <div class="text-left">
+                      <div class="text-[10px] text-slate-400 uppercase leading-none font-medium">GET IT ON</div>
+                      <div class="text-sm font-bold leading-tight">Google Play</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Smartphone Mockup -->
+              <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-64 sm:w-72 rounded-[40px] p-3 bg-gradient-to-b from-slate-700 via-slate-800 to-slate-900 shadow-2xl border-4 border-slate-700">
+                  <div class="w-24 h-4 bg-slate-900 rounded-full mx-auto mb-2"></div>
+                  <div class="rounded-[30px] overflow-hidden bg-[#0F1115] p-4 border border-white/10 space-y-3">
+                    <div class="flex justify-between items-center pb-2 border-b border-white/10 text-xs">
+                      <span class="font-extrabold text-[#FF5E1E]">temir.az</span>
+                      <span class="text-[10px] text-slate-400">Canlı Usta Xəritəsi</span>
+                    </div>
+                    <div class="rounded-xl overflow-hidden aspect-[4/3] bg-slate-800 relative">
+                      <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=500&q=80" alt="Usta" class="w-full h-full object-cover filter brightness-90" />
+                      <div class="absolute bottom-2 left-2 right-2 bg-black/80 backdrop-blur-md p-2 rounded-lg text-white text-[11px] flex justify-between items-center">
+                        <div>
+                          <div class="font-bold">Rəşad Ə. (Elektrik)</div>
+                          <div class="text-[9px] text-emerald-400">Ünvana çatma: 18 dəq</div>
+                        </div>
+                        <span class="bg-[#FF5E1E] text-white px-2 py-0.5 rounded text-[10px] font-bold">Zəng</span>
+                      </div>
+                    </div>
+                    <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 text-[11px] space-y-1">
+                      <div class="font-bold text-white flex justify-between">
+                        <span>Sifariş №40822</span>
+                        <span class="text-emerald-400">Yoldadır</span>
+                      </div>
+                      <div class="text-slate-400 text-[10px]">Ağdağ Suvaq (10 kisə) + Sika</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#090A0E] text-slate-400 border-t border-white/5 pt-14 pb-24 md:pb-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          
+          <div class="lg:col-span-2 space-y-4">
+            <a href="#" class="flex items-center gap-2">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FF5E1E] to-[#FF8C00] flex items-center justify-center shadow-lg shadow-[#FF5E1E]/20">
+                <span class="font-extrabold text-white text-xl">T</span>
+              </div>
+              <span class="text-xl font-extrabold tracking-tight text-white">
+                temir<span class="text-[#FF5E1E]">.az</span>
+              </span>
+            </a>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
+              Azərbaycanın ən böyük rəqəmsal tikinti materialları bazarı və peşəkar usta xidmətləri platforması. 15,000+ məhsul birbaşa istehsalçıdan və 3,500+ yoxlanılmış usta.
+            </p>
+            <div class="space-y-2 text-xs text-slate-300 pt-2">
+              <div class="flex items-center gap-2">
+                <i data-lucide="phone" class="w-4 h-4 text-[#FF5E1E]"></i>
+                <a href="tel:*1818" class="hover:text-white transition-colors">Qaynar xətt: <strong class="text-white">*1818</strong> və ya +994 (12) 500-18-18</a>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4 text-[#FF5E1E]"></i>
+                <span>info@temir.az / sales@temir.az</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-[#FF5E1E]"></i>
+                <span>Bakı ş., Heydər Əliyev pr. 115, Təmir Mərkəzi</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-4 h-4 text-[#FF5E1E]"></i>
+                <span>Hər gün: 08:00 - 21:00 (Sifarişlər 24/7 qəbul olunur)</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Material Kataloqu</h4>
+            <ul class="space-y-2 text-xs">
+              <li><button onclick="filterCategory('quru-qarisiglar')" class="hover:text-white transition-colors text-left">Quru qarışıqlar (Ağdağ, suvaq)</button></li>
+              <li><button onclick="filterCategory('kasi-keramika')" class="hover:text-white transition-colors text-left">Kaşı və kermoqranit</button></li>
+              <li><button onclick="filterCategory('boyalar-laklar')" class="hover:text-white transition-colors text-left">Boyalar və emulsiya</button></li>
+              <li><button onclick="filterCategory('santexnika')" class="hover:text-white transition-colors text-left">Santexnika və borular</button></li>
+              <li><button onclick="filterCategory('elektrik')" class="hover:text-white transition-colors text-left">Elektrik və naqillər</button></li>
+              <li><button onclick="filterCategory('aletler')" class="hover:text-white transition-colors text-left">Alətlər və avadanlıqlar</button></li>
+              <li><button onclick="filterCategory('izolasiya')" class="hover:text-white transition-colors text-left">İstilik və hidroizolyasiya</button></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Usta Xidmətləri</h4>
+            <ul class="space-y-2 text-xs">
+              <li><a href="#masters" class="hover:text-white transition-colors">Elektrik ustası sifarişi</a></li>
+              <li><a href="#masters" class="hover:text-white transition-colors">Santexnik və istipol ustası</a></li>
+              <li><a href="#masters" class="hover:text-white transition-colors">Rəngsaz və aboy ustası</a></li>
+              <li><a href="#masters" class="hover:text-white transition-colors">Kafel və kermoqranit ustası</a></li>
+              <li><a href="#masters" class="hover:text-white transition-colors">Alçıpan və asma tavan ustası</a></li>
+              <li><a href="#masters" class="hover:text-white transition-colors">Açar təhvili təmir briqadası</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Müştəri Xidməti</h4>
+            <ul class="space-y-2 text-xs mb-6">
+              <li><a href="#calculator" class="hover:text-white transition-colors">Təmir material kalkulyatoru</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Çatdırılma və ödəniş şərtləri</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Geri qaytarma siyasəti (14 gün)</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Məxfilik siyasəti</a></li>
+            </ul>
+            <h5 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Sosial Şəbəkələr</h5>
+            <div class="flex items-center gap-2.5">
+              <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#FF5E1E] text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+              </a>
+              <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#FF5E1E] text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                <i data-lucide="facebook" class="w-4 h-4"></i>
+              </a>
+              <a href="https://telegram.org" target="_blank" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#FF5E1E] text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                <i data-lucide="send" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+          <div>© 2026 temir.az — Azərbaycanın №1 Tikinti və Usta Platforması.</div>
+          <div class="flex items-center gap-4">
+            <span class="flex items-center gap-1 text-slate-400">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+              Təhlükəsiz 3D Secure Ödənişlər
+            </span>
+            <span>·</span>
+            <span class="text-slate-400">Bakı, Azərbaycan</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MOBILE STICKY BOTTOM BAR -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0F1115]/95 backdrop-blur-xl border-t border-white/10 px-4 py-2 flex items-center justify-around text-[10px] text-slate-400">
+      <button onclick="openModal('catalog-modal')" class="flex flex-col items-center gap-1 hover:text-[#FF5E1E] transition-colors">
+        <i data-lucide="layout-grid" class="w-5 h-5"></i>
+        <span>Kataloq</span>
+      </button>
+      <a href="#masters" class="flex flex-col items-center gap-1 hover:text-[#FF5E1E] transition-colors">
+        <i data-lucide="users" class="w-5 h-5 text-[#FF5E1E]"></i>
+        <span>Ustalar</span>
+      </a>
+      <button onclick="toggleCart(true)" class="relative flex flex-col items-center gap-1 hover:text-[#FF5E1E] transition-colors">
+        <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+        <span id="mobile-cart-badge" class="absolute -top-1 -right-2 bg-[#FF5E1E] text-white text-[9px] font-black w-4 h-4 rounded-full flex items-center justify-center tabular-nums">0</span>
+        <span>Səbət</span>
+      </button>
+      <a href="#calculator" class="flex flex-col items-center gap-1 hover:text-[#FF5E1E] transition-colors">
+        <i data-lucide="calculator" class="w-5 h-5"></i>
+        <span>Hesabla</span>
+      </a>
+      <button onclick="openModal('auth-modal')" class="flex flex-col items-center gap-1 hover:text-[#FF5E1E] transition-colors">
+        <i data-lucide="user" class="w-5 h-5"></i>
+        <span>Profil</span>
+      </button>
+    </nav>
+
+    <!-- CATALOG MEGA-MENU MODAL -->
+    <div id="catalog-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+      <div class="relative w-full max-w-5xl max-h-[85vh] bg-[#12151C] border border-white/10 rounded-3xl shadow-2xl overflow-hidden flex flex-col">
+        <div class="flex items-center justify-between p-6 border-b border-white/10 bg-[#161922]">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-[#FF5E1E]/20 text-[#FF5E1E] flex items-center justify-center">
+              <i data-lucide="layers" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold text-white tracking-tight">Tikinti və Təmir Kataloqu</h2>
+              <p class="text-xs text-slate-400">15,000+ sertifikatlı məhsul və zavod qiymətləri</p>
+            </div>
+          </div>
+          <button onclick="closeModal('catalog-modal')" class="p-2 text-slate-400 hover:text-white rounded-xl hover:bg-white/5">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+        <div id="catalog-modal-content" class="p-6 overflow-y-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+      </div>
+    </div>
+
+    <!-- PRODUCT QUICK VIEW MODAL -->
+    <div id="product-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+      <div class="relative w-full max-w-3xl bg-[#141722] border border-white/10 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+        <button onclick="closeModal('product-modal')" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-black/60 hover:bg-black text-slate-300 hover:text-white flex items-center justify-center backdrop-blur-md transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div id="product-modal-body" class="overflow-y-auto p-6 sm:p-8"></div>
+      </div>
+    </div>
+
+    <!-- MASTER BOOKING & CONTACT MODAL -->
+    <div id="master-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+      <div class="relative w-full max-w-3xl bg-[#141722] border border-white/10 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+        <button onclick="closeModal('master-modal')" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-black/60 hover:bg-black text-slate-300 hover:text-white flex items-center justify-center backdrop-blur-md transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div id="master-modal-body" class="overflow-y-auto p-6 sm:p-8"></div>
+      </div>
+    </div>
+
+    <!-- CART SLIDE-OVER DRAWER -->
+    <div id="cart-drawer" class="hidden fixed inset-0 z-50 flex justify-end bg-black/80 backdrop-blur-sm">
+      <div class="relative w-full max-w-md bg-[#12151D] border-l border-white/10 shadow-2xl h-full flex flex-col justify-between">
+        <div class="p-5 border-b border-white/10 bg-[#161922] flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-[#FF5E1E]/20 text-[#FF5E1E] flex items-center justify-center">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h2 id="cart-header-title" class="text-base font-bold text-white">Səbət</h2>
+              <span id="cart-header-count" class="text-xs text-slate-400">0 məhsul</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="clearCart()" class="text-xs text-slate-400 hover:text-rose-400 transition-colors px-2 py-1">Təmizlə</button>
+            <button onclick="toggleCart(false)" class="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-white/5">
+              <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="cart-body" class="flex-1 overflow-y-auto p-5 space-y-4"></div>
+
+        <div id="cart-footer" class="p-5 border-t border-white/10 bg-[#161922] space-y-3"></div>
+      </div>
+    </div>
+
+    <!-- AUTHENTICATION / LOGIN MODAL -->
+    <div id="auth-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+      <div class="relative w-full max-w-md bg-[#141722] border border-white/10 rounded-3xl shadow-2xl overflow-hidden p-6 sm:p-8">
+        <button onclick="closeModal('auth-modal')" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-white rounded-xl hover:bg-white/5">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div class="text-center mb-6">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FF5E1E] to-[#FF8C00] flex items-center justify-center mx-auto mb-3 shadow-lg shadow-[#FF5E1E]/25">
+            <i data-lucide="user" class="w-6 h-6 text-white"></i>
+          </div>
+          <h2 class="text-xl font-bold text-white tracking-tight">temir.az Şəxsi Kabinet</h2>
+          <p class="text-xs text-slate-400 mt-1">Sifarişlərinizi izləyin və ustalarla birbaşa əlaqə qurun</p>
+        </div>
+
+        <div class="flex p-1 bg-[#0F1115] rounded-xl mb-6 border border-white/5">
+          <button type="button" onclick="setAuthRole('client')" id="auth-role-client" class="flex-1 py-2 rounded-lg text-xs font-bold bg-[#FF5E1E] text-white">Müştəri girişi</button>
+          <button type="button" onclick="setAuthRole('master')" id="auth-role-master" class="flex-1 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-white">Usta kabineti</button>
+        </div>
+
+        <form id="auth-form" onsubmit="handleAuthSubmit(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1.5">Mobil Telefon Nömrəniz</label>
+            <div class="relative">
+              <i data-lucide="phone" class="w-4 h-4 text-slate-500 absolute left-3.5 top-3 pointer-events-none"></i>
+              <input
+                id="auth-phone-input"
+                type="tel"
+                required
+                value="+994 "
+                class="w-full bg-[#1A1E2B] border border-white/10 focus:border-[#FF5E1E] text-white text-sm rounded-xl pl-10 pr-4 py-2.5 outline-none"
+              />
+            </div>
+            <p class="text-[11px] text-slate-500 mt-1">Giriş üçün təhlükəsizlik kodu (SMS) göndəriləcək.</p>
+          </div>
+          <button type="submit" class="w-full py-3 rounded-xl bg-[#FF5E1E] hover:bg-[#FF6B00] text-white font-bold text-sm transition-all shadow-md flex items-center justify-center gap-2">
+            <span>Daxil Ol</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2.5 max-w-sm w-full pointer-events-none"></div>
+
+    <!-- JAVASCRIPT APPLICATION CODE -->
+    <script>
+      // 1. DATA DEFINITIONS
+      const CATEGORIES = [
+        { id: 'cat-1', slug: 'quru-qarisiglar', title: 'Quru qarışıqlar', itemCount: 420, icon: 'layers', image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80', subcategories: ['Suvaq və şpatlyovka', 'Sement və qum', 'Kafel yapışdırıcıları', 'Özüyayılan döşəmə'] },
+        { id: 'cat-2', slug: 'kasi-keramika', title: 'Kaşı və keramika', itemCount: 890, icon: 'grid', image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80', subcategories: ['Kermoqranit', 'Kafel plitələr', 'Mozaika', 'Fasad keramika'] },
+        { id: 'cat-3', slug: 'boyalar-laklar', title: 'Boyalar və laklar', itemCount: 560, icon: 'paintbrush', image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80', subcategories: ['Daxili emulsiya boyaları', 'Fasad boyaları', 'Metal və taxta boyaları', 'Lak və astar'] },
+        { id: 'cat-4', slug: 'elektrik', title: 'Elektrik', itemCount: 710, icon: 'zap', image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=600&q=80', subcategories: ['Kabel və naqillər', 'Rozetka və açarlar', 'Avtomat qoruyucular', 'İşıqlandırma'] },
+        { id: 'cat-5', slug: 'santexnika', title: 'Santexnika', itemCount: 640, icon: 'droplet', image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80', subcategories: ['PPRC boruları', 'Kran və qarışdırıcılar', 'Unitaz və çanaqlar', 'Radiatorlar'] },
+        { id: 'cat-6', slug: 'izolasiya', title: 'İzolasiya', itemCount: 310, icon: 'shield', image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80', subcategories: ['Mineral yun (Daş yunu)', 'Hidroizolyasiya membranları', 'Penoplast və XPS'] },
+        { id: 'cat-7', slug: 'aletler', title: 'Alətlər və avadanlıqlar', itemCount: 950, icon: 'wrench', image: 'https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=600&q=80', subcategories: ['Elektrikli alətlər', 'Əl alətləri', 'Lazer və nivelirlər', 'Bərkidicilər'] },
+        { id: 'cat-8', slug: 'alcipan', title: 'Alçıpan və profil', itemCount: 280, icon: 'box', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80', subcategories: ['Nəmə davamlı alçıpan', 'Tavan profilləri', 'Divar karkas profilləri'] }
+      ];
+
+      const PRODUCTS = [
+        { id: 'prod-1', name: 'Mətanət A - Ağdağ Direk Suvaq 30 kq', category: 'Quru qarışıqlar', categorySlug: 'quru-qarisiglar', brand: 'Mətanət A', price: 5.60, oldPrice: 6.80, discountPercent: 18, unit: 'ədəd (30 kq)', rating: 4.9, reviewCount: 342, image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80', description: 'Ağdağ Direk gips əsaslı daxili suvaq qarışığı divar və tavanların hamarlanması üçün ən populyar seçimdir. Çatlamaz, yüksək yapışma gücünə malikdir.', specs: { 'Çəki': '30 kq', 'Təyinat': 'Daxili divar və tavan', 'Qalınlıq': '5-30 mm', 'İstehsalçı': 'Azərbaycan (Mətanət A)' } },
+        { id: 'prod-2', name: 'Sika - SikaCeram 101 Kafel Yapışdırıcısı 25 kq', category: 'Quru qarışıqlar', categorySlug: 'quru-qarisiglar', brand: 'Sika', price: 7.90, oldPrice: 9.40, discountPercent: 16, unit: 'ədəd (25 kq)', rating: 4.8, reviewCount: 215, image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80', description: 'Sement əsaslı, yüksək elastikliyə və yapışma gücünə malik kafel və keramika yapışdırıcısı. Nəm sahələr üçün idealdır.', specs: { 'Çəki': '25 kq', 'İstifadə sahəsi': 'Daxili və xarici döşəmə', 'Brend': 'Sika İsveçrə' } },
+        { id: 'prod-3', name: 'Holcim - Klassik 400 Sement 50 kq', category: 'Quru qarışıqlar', categorySlug: 'quru-qarisiglar', brand: 'Holcim', price: 8.50, oldPrice: 9.80, discountPercent: 13, unit: 'ədəd (50 kq)', rating: 5.0, reviewCount: 489, image: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=600&q=80', description: 'Holcim Klassik M400 markalı portland sementi hər növ betonlama, hörgü və bünövrə işlərində maksimum möhkəmlik təmin edir.', specs: { 'Çəki': '50 kq', 'Marka': 'M400 (CEM II/B-P 32.5 R)', 'İstehsalçı': 'Holcim Azərbaycan' } },
+        { id: 'prod-4', name: 'Knauf - Nəmə Davamlı Yaşıl Alçıpan 12.5 mm', category: 'Alçıpan və profil', categorySlug: 'alcipan', brand: 'Knauf', price: 11.20, oldPrice: 13.50, discountPercent: 17, unit: 'vərəq (1.2 x 2.5 m)', rating: 4.9, reviewCount: 178, image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80', description: 'Yüksək nəmə davamlı xüsusi qatqılı yaşıl alçıpan lövhəsi vanna otağı və mətbəxdə asma tavanlar üçün nəzərdə tutulub.', specs: { 'Ölçülər': '1200 x 2500 x 12.5 mm', 'Sahə': '3.0 m²', 'Xüsusiyyət': 'Hidrofobik nəmə davamlı' } },
+        { id: 'prod-5', name: 'DYO - Dinamik İpək Mat Daxili Boya 15 L', category: 'Boyalar və laklar', categorySlug: 'boyalar-laklar', brand: 'DYO', price: 68.00, oldPrice: 82.00, discountPercent: 17, unit: 'vedrə (15 L)', rating: 4.9, reviewCount: 194, image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80', description: 'Su əsaslı, silikonlu, silinə bilən ipək mat daxili divar boyası. Qoxusuzdur, saralmaz, kifin qarşısını alır.', specs: { 'Həcm': '15 Litr', 'Əhatə sahəsi': 'Bir qatda 180-220 m²', 'Quruma': '24 saat tam quruma' } },
+        { id: 'prod-6', name: 'Bosch Professional Perforator GBH 2-26 DRE', category: 'Alətlər və avadanlıqlar', categorySlug: 'aletler', brand: 'Bosch', price: 245.00, oldPrice: 289.00, discountPercent: 15, unit: 'ədəd', rating: 5.0, reviewCount: 312, image: 'https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=600&q=80', description: '800 Vt gücündə və 2.7 C zərbə qüvvəsinə malik peşəkar perforator. Beton və daşın deşilməsində ustaların bir nömrəli seçimi.', specs: { 'Güc': '800 Vt', 'Patron tipi': 'SDS-plus', 'Zəmanət': '1 il rəsmi Bosch' } },
+        { id: 'prod-7', name: 'Kerama Marazzi - Royal Mərmər Kermoqranit 60x120', category: 'Kaşı və keramika', categorySlug: 'kasi-keramika', brand: 'Kerama Marazzi', price: 38.50, oldPrice: 46.00, discountPercent: 16, unit: 'm²', rating: 4.8, reviewCount: 156, image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80', description: 'Lüks Calacatta mərmər teksturalı, cilalanmış rektifikasiyalı kermoqranit plitələr. İstipol ilə tam uyğundur.', specs: { 'Ölçü': '60 x 120 sm', 'Səth': 'Parlaq cilalı', 'Qalınlıq': '9 mm' } },
+        { id: 'prod-8', name: 'Schneider Electric - Asfora İkili Rozetka', category: 'Elektrik', categorySlug: 'elektrik', brand: 'Schneider Electric', price: 6.80, oldPrice: 8.20, discountPercent: 17, unit: 'dəst', rating: 4.9, reviewCount: 164, image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=600&q=80', description: 'Torpaqlama kontaktlı ikili gizli montaj rozetkası. Yanmayan polikarbonat korpus, minimalist dizayn.', specs: { 'Gərginlik': '250V / 16A', 'Rəng': 'Ağ / Antrasit', 'Mühafizə': 'IP20' } },
+        { id: 'prod-9', name: 'Kalde - PPRC Şüşəlifli Boru 25 mm (4 metr)', category: 'Santexnika', categorySlug: 'santexnika', brand: 'Kalde', price: 4.20, oldPrice: 5.10, discountPercent: 18, unit: 'ədəd (4m)', rating: 4.7, reviewCount: 112, image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80', description: 'Şüşəlifli təbəqəli polipropilen boru yüksək təzyiq və istiliyə qarşı genişlənmənin qarşısını alır.', specs: { 'Diametr': '25 mm', 'Uzunluq': '4 metr', 'Təzyiq': 'PN20 (20 Bar)' } },
+        { id: 'prod-10', name: 'Ursa Terra - Mineral Daş Yunu İzolyasiyası 50 mm', category: 'İzolasiya', categorySlug: 'izolasiya', brand: 'Ursa', price: 36.00, oldPrice: 42.00, discountPercent: 14, unit: 'bağlama (7.2 m²)', rating: 4.9, reviewCount: 98, image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80', description: 'Daxili divarlar və arakəsmələr üçün yüksək istilik və səs izolyasiya edən mineral daş yunu.', specs: { 'Qalınlıq': '50 mm', 'Bağlama sahəsi': '7.2 m²', 'Yanğın sinfi': 'A1 (Yanmayan)' } },
+        { id: 'prod-11', name: 'Total Tools - Akkumulyatorlu Drel 20V + 2 Batareya', category: 'Alətlər və avadanlıqlar', categorySlug: 'aletler', brand: 'Total Tools', price: 115.00, oldPrice: 139.00, discountPercent: 17, unit: 'komplekt', rating: 4.8, reviewCount: 220, image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&q=80', description: '20V lityum batareyalı drel və vintburan. Çamadan, 2 ədəd batareya və ucluqlar dəsti daxildir.', specs: { 'Gərginlik': '20V', 'Fırlanma anı': '45 Nm', 'Batareya': '2 x 2.0 Ah' } },
+        { id: 'prod-12', name: 'Mətanət A - FasNatural Fasad Suvağı 25 kq', category: 'Quru qarışıqlar', categorySlug: 'quru-qarisiglar', brand: 'Mətanət A', price: 9.20, oldPrice: 10.90, discountPercent: 15, unit: 'ədəd (25 kq)', rating: 4.8, reviewCount: 140, image: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=600&q=80', description: 'Binaların fasadında istilik izolyasiya lövhələrinin (penoplast, daş yunu) yapışdırılması üçün xüsusi fasad suvağı.', specs: { 'Çəki': '25 kq', 'Təyinat': 'Fasad istilik izolyasiyası' } }
+      ];
+
+      const MASTERS = [
+        { id: 'm-1', name: 'Rəşad Əliyev', specialty: 'Baş Elektrik Mühəndisi', specialtySlug: 'elektrik', rating: 4.95, reviewCount: 184, experience: 14, completed: 420, rate: '25 ₼ / nöqtə', location: 'Bakı və Abşeron', phone: '+994 50 312 45 78', verified: true, avatar: 'https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=500&q=80', bio: '14 illik staja malik sertifikatlı baş elektrik. Mənzillərin və villaların elektrik naqillərinin sıfırdan çəkilişi, avtomatika lövhələrinin yığılması və ağıllı ev sistemləri.', skills: ['Sıfırdan elektrik', 'Lövhələrin yığılması', 'Torpaqlama', 'Ağıllı ev'], recentWork: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=500&q=80' },
+        { id: 'm-2', name: 'İlham Qasımov', specialty: 'Santexnik və İstilik Ustası', specialtySlug: 'santexnik', rating: 4.92, reviewCount: 210, experience: 16, completed: 510, rate: '30 ₼ / nöqtə', location: 'Bakı, Sumqayıt', phone: '+994 55 428 19 03', verified: true, avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80', bio: 'Kombi sistemləri, istipol (isti döşəmə), gizli quraşdırma santexnika. Görülən hər bir işə 3 il yazılı zəmanət verirəm.', skills: ['İstipol montajı', 'Kombi quraşdırma', 'Kanalizasiya xətləri', 'Gizli unitaz'], recentWork: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80' },
+        { id: 'm-3', name: 'Tərlan Məmmədov', specialty: 'Kafel və Keramoqranit Ustası', specialtySlug: 'kafel', rating: 4.88, reviewCount: 165, experience: 11, completed: 330, rate: '18 ₼ / m²', location: 'Bakı, Xırdalan', phone: '+994 70 890 22 14', verified: true, avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80', bio: 'Böyük ölçülü kermoqranit (60x120, 120x240 sm), kafel və mozaika işlərində ixtisaslaşmışam. 45 dərəcəlik künc yonulması və lazer dəqiqliyi.', skills: ['Böyükformat kermoqranit', '45° bucaq yonumu', 'Lazer nivelirovka', 'Epoksid derz'], recentWork: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80' },
+        { id: 'm-4', name: 'Vüsal Quliyev', specialty: 'Rəngsaz və Suvaqçı', specialtySlug: 'rengsaz', rating: 4.96, reviewCount: 198, experience: 13, completed: 390, rate: '6 ₼ / m²', location: 'Bakı şəhəri', phone: '+994 51 645 33 90', verified: true, avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80', bio: 'Mayakla tam düz divarlar, Ağdağ suvağı, şpatlyovka, emulsiya və dekorativ venesiya boyaları. Tozsuz cilalama aparatı ilə tam səliqəli təhvil.', skills: ['Mayakla Ağdağ', 'Tozsuz cilalama', 'İpək boya', 'Venesiya suvağı'], recentWork: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80' },
+        { id: 'm-5', name: 'Elvin Hüseynov', specialty: 'Alçıpan və Asma Tavan', specialtySlug: 'alcipan', rating: 4.89, reviewCount: 142, experience: 9, completed: 285, rate: '12 ₼ / m²', location: 'Bakı və Abşeron', phone: '+994 55 901 77 44', verified: true, avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=500&q=80', bio: 'Fiqurlu və düz asma tavanlar, arakəsmə divarlar, gizli işıq qutuları və Knauf standartı ilə möhkəm karkas yığılması.', skills: ['Fiqurlu tavan', 'Gizli pərdəlik', 'Səs izolyasiyası', 'Armstrong'], recentWork: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80' },
+        { id: 'm-6', name: '"Usta Qrup" Briqadası', specialty: 'Açar Təhvili Təmir Briqadası', specialtySlug: 'briqada', rating: 4.98, reviewCount: 280, experience: 18, completed: 460, rate: '120 ₼ / m²', location: 'Bütün Azərbaycan', phone: '+994 12 500 18 18', verified: true, avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80', bio: '12 nəfərlik peşəkar briqada: mühəndis, elektrik, santexnik və rəngsazlar. Rəsmi müqavilə, dəqiq smeta və 5 il rəsmi zəmanət.', skills: ['Açar təhvili', 'Dizayn smeta', 'Mühəndis nəzarəti', '5 il zəmanət'], recentWork: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80' }
+      ];
+
+      // 2. STATE MANAGEMENT
+      let cart = [
+        { product: PRODUCTS[0], quantity: 4 }, // Ağdağ 30kq
+        { product: PRODUCTS[1], quantity: 2 }  // Sika 25kq
+      ];
+      let activeCategory = 'all';
+      let selectedBrand = 'all';
+      let currentSort = 'default';
+      let currentSearch = '';
+      let activeMasterSpecialty = 'all';
+      let calcTab = 'suvaq';
+      let coatCount = 2;
+      let promoDiscount = 0;
+      let isCheckoutMode = false;
+      let currentSlideIndex = 0;
+
+      // 3. RENDER FUNCTIONS
+      function renderCategories() {
+        const container = document.getElementById('categories-grid');
+        container.innerHTML = CATEGORIES.map(cat => `
+          <div onclick="filterCategory('${cat.slug}')" class="group relative overflow-hidden rounded-2xl cursor-pointer border ${activeCategory === cat.slug ? 'border-[#FF5E1E] bg-[#1F2432]' : 'border-white/5 bg-[#141720] hover:bg-[#1A1F2C]'} transition-all duration-300">
+            <div class="relative h-28 sm:h-32 w-full overflow-hidden">
+              <img src="${cat.image}" alt="${cat.title}" class="w-full h-full object-cover filter brightness-[0.4] group-hover:brightness-[0.55] group-hover:scale-105 transition-all duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#141720] via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 w-9 h-9 rounded-xl bg-[#0F1115]/80 backdrop-blur-md border border-white/10 text-white flex items-center justify-center group-hover:bg-[#FF5E1E] transition-colors">
+                <i data-lucide="${cat.icon}" class="w-4 h-4"></i>
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-black/60 text-[10px] font-semibold text-slate-300 tabular-nums">${cat.itemCount}+</div>
+            </div>
+            <div class="p-3.5 sm:p-4">
+              <h3 class="text-sm sm:text-base font-bold text-white group-hover:text-[#FF5E1E] transition-colors truncate">${cat.title}</h3>
+              <p class="text-[11px] text-slate-400 mt-1 truncate">${cat.subcategories.slice(0, 2).join(', ')}...</p>
+            </div>
+          </div>
+        `).join('');
+
+        // Catalog modal content
+        const modalContent = document.getElementById('catalog-modal-content');
+        modalContent.innerHTML = CATEGORIES.map(cat => `
+          <div class="p-4 rounded-2xl bg-[#181C26] hover:bg-[#202534] border border-white/5 hover:border-[#FF5E1E]/40 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-white/5 text-[#FF5E1E] flex items-center justify-center">
+                  <i data-lucide="${cat.icon}" class="w-5 h-5"></i>
+                </div>
+                <span class="text-[11px] text-slate-400 font-semibold tabular-nums">${cat.itemCount} məhsul</span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-2">${cat.title}</h3>
+              <ul class="space-y-1 mb-4 text-xs text-slate-400">
+                ${cat.subcategories.map(s => `<li onclick="filterCategory('${cat.slug}'); closeModal('catalog-modal');" class="hover:text-white cursor-pointer truncate">• ${s}</li>`).join('')}
+              </ul>
+            </div>
+            <button onclick="filterCategory('${cat.slug}'); closeModal('catalog-modal');" class="w-full pt-3 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-[#FF5E1E]">
+              <span>Bütün məhsullar</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        `).join('');
+      }
+
+      function renderCategoryTabs() {
+        const tabs = [
+          { slug: 'all', label: 'Bütün Məhsullar' },
+          { slug: 'discount', label: 'Xüsusi Endirimlər' },
+          { slug: 'quru-qarisiglar', label: 'Quru qarışıqlar' },
+          { slug: 'boyalar-laklar', label: 'Boyalar və laklar' },
+          { slug: 'kasi-keramika', label: 'Kaşı və keramika' },
+          { slug: 'elektrik', label: 'Elektrik' },
+          { slug: 'santexnika', label: 'Santexnika' },
+          { slug: 'aletler', label: 'Alətlər' },
+          { slug: 'izolasiya', label: 'İzolasiya' }
+        ];
+
+        const container = document.getElementById('product-category-tabs');
+        container.innerHTML = tabs.map(tab => `
+          <button
+            onclick="filterCategory('${tab.slug}')"
+            class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all shrink-0 ${activeCategory === tab.slug ? 'bg-[#FF5E1E] text-white shadow-md' : 'bg-[#161922] text-slate-300 hover:text-white border border-white/5'}"
+          >
+            ${tab.label}
+          </button>
+        `).join('');
+      }
+
+      function renderBrandChips() {
+        const brands = ['Mətanət A', 'Ağdağ', 'Sika', 'Knauf', 'Holcim', 'Bosch', 'DYO', 'Kalde', 'Kerama Marazzi', 'Ursa', 'Total Tools'];
+        const container = document.getElementById('brand-filter-chips');
+        container.innerHTML = `
+          <span class="font-semibold text-slate-300 shrink-0">Brend:</span>
+          <button onclick="filterBrand('all')" class="px-3 py-1 rounded-lg transition-colors whitespace-nowrap shrink-0 ${selectedBrand === 'all' ? 'bg-white/15 text-white font-bold' : 'bg-white/5 text-slate-300 hover:bg-white/10'}">Bütün brendlər</button>
+          ${brands.map(b => `
+            <button onclick="filterBrand('${b}')" class="px-3 py-1 rounded-lg transition-colors whitespace-nowrap shrink-0 ${selectedBrand === b ? 'bg-[#FF5E1E]/20 text-[#FF5E1E] border border-[#FF5E1E]/40 font-bold' : 'bg-white/5 text-slate-300 hover:bg-white/10'}">${b}</button>
+          `).join('')}
+        `;
+      }
+
+      function renderProducts() {
+        const container = document.getElementById('products-grid');
+        let filtered = PRODUCTS.filter(p => {
+          if (activeCategory === 'discount') {
+            if (!p.oldPrice || !p.discountPercent) return false;
+          } else if (activeCategory !== 'all') {
+            if (p.categorySlug !== activeCategory) return false;
+          }
+          if (selectedBrand !== 'all') {
+            if (!p.brand.toLowerCase().includes(selectedBrand.toLowerCase())) return false;
+          }
+          if (currentSearch.trim().length > 0) {
+            const q = currentSearch.toLowerCase();
+            if (!p.name.toLowerCase().includes(q) && !p.brand.toLowerCase().includes(q) && !p.category.toLowerCase().includes(q)) return false;
+          }
+          return true;
+        });
+
+        if (currentSort === 'price-asc') filtered.sort((a, b) => a.price - b.price);
+        else if (currentSort === 'price-desc') filtered.sort((a, b) => b.price - a.price);
+        else if (currentSort === 'discount') filtered.sort((a, b) => (b.discountPercent || 0) - (a.discountPercent || 0));
+        else if (currentSort === 'rating') filtered.sort((a, b) => b.rating - a.rating);
+
+        if (filtered.length === 0) {
+          container.innerHTML = `
+            <div class="col-span-full glass-panel rounded-3xl p-12 text-center max-w-lg mx-auto">
+              <p class="text-slate-300 font-semibold text-lg mb-2">Axtarışa uyğun məhsul tapılmadı</p>
+              <p class="text-slate-400 text-xs mb-4">Filtrləri və ya axtarış sorğusunu dəyişdirin.</p>
+              <button onclick="resetFilters()" class="px-5 py-2.5 rounded-xl bg-[#FF5E1E] text-white text-xs font-bold">Filtrləri sıfırla</button>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = filtered.map(product => `
+          <div class="group relative flex flex-col justify-between rounded-2xl bg-[#141720] border border-white/5 hover:border-white/20 hover:bg-[#181D29] transition-all duration-300 overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1">
+            <div class="relative aspect-[4/3] w-full bg-[#1A1F2B] overflow-hidden">
+              <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95" />
+              ${product.discountPercent ? `<div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-[#FF5E1E] text-white text-xs font-black shadow-md tabular-nums">-${product.discountPercent}%</div>` : ''}
+              <button onclick="openProductModal('${product.id}')" class="absolute top-3 right-3 w-8 h-8 rounded-lg bg-black/60 hover:bg-black text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-md" title="Məhsula baxış">
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-1.5 text-xs text-slate-400 mb-2 font-medium">
+                  <span class="text-[#FF5E1E] font-semibold">${product.brand}</span>
+                  <span>·</span>
+                  <span class="truncate">${product.category}</span>
+                </div>
+                <h3 onclick="openProductModal('${product.id}')" class="text-sm sm:text-base font-bold text-white group-hover:text-[#FF5E1E] transition-colors line-clamp-2 cursor-pointer leading-snug">
+                  ${product.name}
+                </h3>
+                <div class="flex items-center gap-2 mt-2 text-xs text-slate-400">
+                  <span class="flex items-center gap-1 text-amber-400 font-semibold tabular-nums">
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i> ${product.rating.toFixed(1)}
+                  </span>
+                  <span>·</span>
+                  <span class="tabular-nums">(${product.reviewCount} rəy)</span>
+                  <span>·</span>
+                  <span class="text-emerald-400 font-medium">Stokda</span>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-white/5 flex items-center justify-between gap-3">
+                <div>
+                  <div class="flex items-baseline gap-2">
+                    <span class="text-lg sm:text-xl font-black text-white tabular-nums tracking-tight">${product.price.toFixed(2)} ₼</span>
+                    ${product.oldPrice ? `<span class="text-xs text-slate-500 line-through tabular-nums">${product.oldPrice.toFixed(2)} ₼</span>` : ''}
+                  </div>
+                  <span class="text-[11px] text-slate-400 block -mt-0.5">/ ${product.unit}</span>
+                </div>
+                <button
+                  onclick="addToCart('${product.id}', 1)"
+                  id="add-btn-${product.id}"
+                  class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-[#FF5E1E] hover:bg-[#FF6B00] text-white shadow-md shadow-[#FF5E1E]/20 transition-all active:scale-95"
+                >
+                  <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                  <span>Səbətə at</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        lucide.createIcons();
+      }
+
+      function renderMasters() {
+        const specialties = [
+          { key: 'all', label: 'Bütün Ustalar' },
+          { key: 'santexnik', label: 'Santexniklər' },
+          { key: 'elektrik', label: 'Elektriklər' },
+          { key: 'rengsaz', label: 'Rəngsaz & Suvaqçılar' },
+          { key: 'kafel', label: 'Kafel & Keramoqranit' },
+          { key: 'alcipan', label: 'Alçıpan Ustaları' },
+          { key: 'briqada', label: 'Təmir Briqadaları' }
+        ];
+
+        document.getElementById('masters-specialties-tabs').innerHTML = specialties.map(s => `
+          <button
+            onclick="filterMasterSpecialty('${s.key}')"
+            class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all shrink-0 ${activeMasterSpecialty === s.key ? 'bg-[#FF5E1E] text-white shadow-md' : 'bg-[#161922] text-slate-300 hover:text-white border border-white/5'}"
+          >
+            ${s.label}
+          </button>
+        `).join('');
+
+        const filtered = activeMasterSpecialty === 'all'
+          ? MASTERS
+          : MASTERS.filter(m => m.specialtySlug === activeMasterSpecialty);
+
+        document.getElementById('masters-grid').innerHTML = filtered.map(m => `
+          <div class="glass-panel rounded-3xl p-5 sm:p-6 transition-all duration-300 flex flex-col justify-between group hover:border-white/20">
+            <div>
+              <div class="flex items-start gap-4 mb-4">
+                <div class="relative shrink-0">
+                  <img src="${m.avatar}" alt="${m.name}" class="w-16 h-16 rounded-2xl object-cover ring-2 ring-[#FF5E1E]/30 group-hover:ring-[#FF5E1E] transition-all" />
+                  ${m.verified ? `<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center ring-2 ring-[#0F1115] text-xs">✓</div>` : ''}
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-[#FF5E1E] transition-colors truncate">${m.name}</h3>
+                  <p class="text-xs font-semibold text-[#FF5E1E] truncate mt-0.5">${m.specialty}</p>
+                  <div class="flex items-center gap-1.5 mt-2 text-xs text-slate-300">
+                    <span class="flex items-center gap-1 text-amber-400 font-bold tabular-nums">
+                      <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i> ${m.rating.toFixed(2)}
+                    </span>
+                    <span>·</span>
+                    <span class="tabular-nums">(${m.reviewCount} rəy)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 my-4 p-3 rounded-2xl bg-[#0F1115] border border-white/5 text-xs">
+                <div>
+                  <span class="text-slate-500 block text-[10px] uppercase font-semibold">Təcrübə</span>
+                  <span class="text-white font-bold tabular-nums">${m.experience} il</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 block text-[10px] uppercase font-semibold">Tamamlanan</span>
+                  <span class="text-white font-bold tabular-nums">${m.completed}+ layihə</span>
+                </div>
+              </div>
+
+              <p class="text-xs text-slate-300 line-clamp-2 leading-relaxed mb-4">${m.bio}</p>
+
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                ${m.skills.map(s => `<span class="px-2.5 py-1 rounded-lg bg-white/5 text-slate-300 text-[11px]">${s}</span>`).join('')}
+              </div>
+
+              <div class="flex items-center gap-1.5 text-xs text-slate-400 mb-4">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#FF5E1E] shrink-0"></i>
+                <span class="truncate">${m.location}</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between gap-3">
+              <div>
+                <span class="text-[10px] uppercase text-slate-400 font-semibold block">Xidmət haqqı</span>
+                <span class="text-sm font-extrabold text-white tabular-nums">${m.rate}</span>
+              </div>
+              <button onclick="openMasterModal('${m.id}')" class="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#FF5E1E] hover:bg-[#FF6B00] text-white text-xs font-bold transition-all shadow-md shadow-[#FF5E1E]/20 active:scale-95">
+                <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                <span>Əlaqə & Sifariş</span>
+              </button>
+            </div>
+          </div>
+        `).join('');
+
+        lucide.createIcons();
+      }
+
+      function updateCalculator() {
+        const area = parseInt(document.getElementById('calc-area-input').value, 10);
+        document.getElementById('calc-area-val').innerText = `${area} m²`;
+
+        const resultLines = document.getElementById('calc-result-lines');
+
+        if (calcTab === 'suvaq') {
+          const thickness = parseInt(document.getElementById('calc-thickness-input').value, 10);
+          document.getElementById('calc-thickness-val').innerText = `${thickness} mm`;
+          const agdagBags = Math.ceil((area * (thickness / 10) * 8.5) / 30);
+          const totalCost = (agdagBags * 5.60).toFixed(2);
+
+          resultLines.innerHTML = `
+            <div class="flex items-center justify-between py-2 border-b border-white/5">
+              <span class="text-sm text-slate-200">Ağdağ Direk Suvaq 30 kq:</span>
+              <span class="text-lg font-bold text-white tabular-nums">${agdagBags} kisə</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b border-white/5">
+              <span class="text-sm text-slate-200">Ümumi çəki:</span>
+              <span class="text-sm font-semibold text-slate-400 tabular-nums">${agdagBags * 30} kq</span>
+            </div>
+            <div class="flex items-center justify-between pt-1">
+              <span class="text-sm text-slate-200 font-semibold">Təxmini büdcə:</span>
+              <span class="text-xl font-extrabold text-[#FF5E1E] tabular-nums">${totalCost} ₼</span>
+            </div>
+          `;
+        } else if (calcTab === 'boya') {
+          const liters = Math.ceil((area * coatCount) / 12);
+          const buckets = Math.max(1, Math.ceil(liters / 15));
+          const totalCost = (buckets * 68.00).toFixed(2);
+
+          resultLines.innerHTML = `
+            <div class="flex items-center justify-between py-2 border-b border-white/5">
+              <span class="text-sm text-slate-200">DYO İpək Mat Boya (15L):</span>
+              <span class="text-lg font-bold text-white tabular-nums">${buckets} vedrə</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b border-white/5">
+              <span class="text-sm text-slate-200">Tələb olunan boya:</span>
+              <span class="text-sm font-semibold text-slate-400 tabular-nums">${liters} Litr</span>
+            </div>
+            <div class="flex items-center justify-between pt-1">
+              <span class="text-sm text-slate-200 font-semibold">Təxmini büdcə:</span>
+              <span class="text-xl font-extrabold text-[#FF5E1E] tabular-nums">${totalCost} ₼</span>
+            </div>
+          `;
+        } else if (calcTab === 'kafel') {
+          const tileM2 = Math.ceil(area * 1.1);
+          const sikaBags = Math.ceil(tileM2 / 5);
+          const totalCost = (tileM2 * 38.50 + sikaBags * 7.90).toFixed(2);
+
+          resultLines.innerHTML = `
+            <div class="flex items-center justify-between py-2 border-b border-white/5">
+              <span class="text-sm text-slate-200">Keramoqranit plitə (ehtiyatla):</span>
+              <span class="text-lg font-bold text-white tabular-nums">${tileM2} m²</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b border-white/5">
+              <span class="text-sm text-slate-200">Sika kafel yapışdırıcısı:</span>
+              <span class="text-sm font-semibold text-slate-400 tabular-nums">${sikaBags} kisə (25 kq)</span>
+            </div>
+            <div class="flex items-center justify-between pt-1">
+              <span class="text-sm text-slate-200 font-semibold">Təxmini büdcə:</span>
+              <span class="text-xl font-extrabold text-[#FF5E1E] tabular-nums">${totalCost} ₼</span>
+            </div>
+          `;
+        }
+      }
+
+      function setCalcTab(tab) {
+        calcTab = tab;
+        ['suvaq', 'boya', 'kafel'].forEach(t => {
+          const btn = document.getElementById(`calc-tab-${t}`);
+          if (t === tab) {
+            btn.className = 'flex-1 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-[#FF5E1E] text-white shadow-md';
+          } else {
+            btn.className = 'flex-1 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-400 hover:text-white';
+          }
+        });
+
+        document.getElementById('calc-suvaq-opts').classList.toggle('hidden', tab !== 'suvaq');
+        document.getElementById('calc-boya-opts').classList.toggle('hidden', tab !== 'boya');
+        document.getElementById('calc-kafel-opts').classList.toggle('hidden', tab !== 'kafel');
+
+        updateCalculator();
+      }
+
+      function setCoats(n) {
+        coatCount = n;
+        document.getElementById('calc-coats-val').innerText = `${n} qat`;
+        [1, 2, 3].forEach(i => {
+          const btn = document.getElementById(`coat-btn-${i}`);
+          if (i === n) btn.className = 'flex-1 py-2 rounded-xl text-xs font-bold border border-[#FF5E1E] bg-[#FF5E1E] text-white';
+          else btn.className = 'flex-1 py-2 rounded-xl text-xs font-bold border border-white/10 bg-white/5 text-slate-300';
+        });
+        updateCalculator();
+      }
+
+      function addCalculatedMaterialsToCart() {
+        const area = parseInt(document.getElementById('calc-area-input').value, 10);
+        if (calcTab === 'suvaq') {
+          const thickness = parseInt(document.getElementById('calc-thickness-input').value, 10);
+          const agdagBags = Math.ceil((area * (thickness / 10) * 8.5) / 30);
+          addToCart('prod-1', agdagBags);
+        } else if (calcTab === 'boya') {
+          const liters = Math.ceil((area * coatCount) / 12);
+          const buckets = Math.max(1, Math.ceil(liters / 15));
+          addToCart('prod-5', buckets);
+        } else if (calcTab === 'kafel') {
+          const tileM2 = Math.ceil(area * 1.1);
+          const sikaBags = Math.ceil(tileM2 / 5);
+          addToCart('prod-7', tileM2);
+          addToCart('prod-2', sikaBags);
+        }
+
+        const btn = document.getElementById('calc-add-btn');
+        btn.innerHTML = '<span>Materiallar səbətə əlavə olundu!</span>';
+        btn.classList.add('bg-emerald-600');
+        setTimeout(() => {
+          btn.innerHTML = '<i data-lucide="shopping-cart" class="w-4 h-4"></i><span>Bu materialları səbətə əlavə et</span>';
+          btn.classList.remove('bg-emerald-600');
+          lucide.createIcons();
+        }, 2000);
+      }
+
+      // 4. CART & MODAL FUNCTIONS
+      function updateCartUI() {
+        const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+        const subtotal = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
+
+        document.getElementById('nav-cart-badge').innerText = count;
+        document.getElementById('nav-cart-total').innerText = `${subtotal.toFixed(2)} ₼`;
+        document.getElementById('mobile-cart-badge').innerText = count;
+        document.getElementById('cart-header-count').innerText = `${count} məhsul`;
+
+        const body = document.getElementById('cart-body');
+        const footer = document.getElementById('cart-footer');
+
+        if (cart.length === 0) {
+          body.innerHTML = `
+            <div class="h-full flex flex-col items-center justify-center text-center p-6 space-y-4">
+              <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-slate-500">
+                <i data-lucide="shopping-bag" class="w-8 h-8"></i>
+              </div>
+              <h3 class="text-base font-bold text-white">Səbətiniz boşdur</h3>
+              <p class="text-xs text-slate-400 max-w-xs">Kataloqdan zəruri tikinti materiallarını seçərək səbətə əlavə edin.</p>
+              <button onclick="toggleCart(false)" class="px-5 py-2.5 rounded-xl bg-[#FF5E1E] text-white text-xs font-bold">Kataloqa Keç</button>
+            </div>
+          `;
+          footer.innerHTML = '';
+          lucide.createIcons();
+          return;
+        }
+
+        if (isCheckoutMode) {
+          body.innerHTML = `
+            <form id="checkout-form" onsubmit="handleCheckoutSubmit(event)" class="space-y-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Adınız və Soyadınız *</label>
+                <input type="text" required placeholder="Məs: Emil Əliyev" class="w-full bg-[#161922] border border-white/10 focus:border-[#FF5E1E] text-white text-xs sm:text-sm rounded-xl px-3.5 py-2.5 outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Əlaqə Nömrəsi *</label>
+                <input type="tel" required value="+994 " class="w-full bg-[#161922] border border-white/10 focus:border-[#FF5E1E] text-white text-xs sm:text-sm rounded-xl px-3.5 py-2.5 outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Çatdırılma Ünvanı *</label>
+                <textarea rows="2" required placeholder="Bakı ş., Nərimanov r., Təbriz küç. 45" class="w-full bg-[#161922] border border-white/10 focus:border-[#FF5E1E] text-white text-xs sm:text-sm rounded-xl px-3.5 py-2.5 outline-none resize-none"></textarea>
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-2">Ödəniş Üsulu</label>
+                <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                  <div class="p-2.5 rounded-xl bg-[#FF5E1E]/15 border border-[#FF5E1E] text-white font-semibold cursor-pointer">Qapıda POS</div>
+                  <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-400 font-semibold cursor-pointer">Nağd</div>
+                  <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-400 font-semibold cursor-pointer">Kartla</div>
+                </div>
+              </div>
+            </form>
+          `;
+
+          const deliveryFee = subtotal > 150 ? 0 : 10;
+          const discountVal = subtotal * promoDiscount;
+          const finalTotal = subtotal - discountVal + deliveryFee;
+
+          footer.innerHTML = `
+            <div class="space-y-1.5 text-xs text-slate-300">
+              <div class="flex justify-between"><span>Məhsul dəyəri:</span><span class="text-white font-semibold tabular-nums">${subtotal.toFixed(2)} ₼</span></div>
+              <div class="flex justify-between"><span>Çatdırılma:</span><span class="tabular-nums ${deliveryFee === 0 ? 'text-emerald-400' : 'text-white'}">${deliveryFee === 0 ? 'PULSUZ' : `${deliveryFee.toFixed(2)} ₼`}</span></div>
+              <div class="flex justify-between pt-2 border-t border-white/5 text-sm font-bold text-white"><span>Yekun:</span><span class="text-lg text-[#FF5E1E] tabular-nums">${finalTotal.toFixed(2)} ₼</span></div>
+            </div>
+            <div class="flex gap-2">
+              <button onclick="setCheckoutMode(false)" type="button" class="flex-1 py-3 rounded-xl bg-white/10 text-white font-bold text-xs">Geri</button>
+              <button type="submit" form="checkout-form" class="flex-2 py-3 rounded-xl bg-[#FF5E1E] hover:bg-[#FF6B00] text-white font-bold text-xs sm:text-sm shadow-md">Sifarişi Təsdiqlə</button>
+            </div>
+          `;
+        } else {
+          body.innerHTML = `
+            <div class="space-y-3">
+              ${cart.map(({ product, quantity }) => `
+                <div class="flex items-center gap-3 p-3 rounded-2xl bg-[#161922] border border-white/5">
+                  <img src="${product.image}" alt="${product.name}" class="w-14 h-14 rounded-xl object-cover shrink-0" />
+                  <div class="flex-1 min-w-0">
+                    <span class="text-[10px] text-[#FF5E1E] font-semibold uppercase block">${product.brand}</span>
+                    <h4 class="text-xs font-bold text-white truncate">${product.name}</h4>
+                    <span class="text-xs font-black text-white tabular-nums block mt-1">${(product.price * quantity).toFixed(2)} ₼</span>
+                  </div>
+                  <div class="flex flex-col items-end gap-2 shrink-0">
+                    <button onclick="removeFromCart('${product.id}')" class="text-slate-500 hover:text-rose-400 p-1"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                    <div class="flex items-center gap-1.5 bg-[#0F1115] rounded-lg p-0.5 border border-white/5">
+                      <button onclick="changeQty('${product.id}', -1)" class="w-5 h-5 rounded flex items-center justify-center text-slate-300 hover:bg-white/10">-</button>
+                      <span class="text-xs font-bold text-white w-4 text-center tabular-nums">${quantity}</span>
+                      <button onclick="changeQty('${product.id}', 1)" class="w-5 h-5 rounded flex items-center justify-center text-slate-300 hover:bg-white/10">+</button>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+              <div class="pt-2">
+                <div class="flex gap-2">
+                  <input id="promo-input" type="text" placeholder="Promo kod (məs: TEMIR10)" class="w-full bg-[#161922] border border-white/10 focus:border-[#FF5E1E] text-xs text-white rounded-xl px-3 py-2.5 uppercase outline-none" />
+                  <button onclick="applyPromo()" class="px-3.5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs shrink-0">Tətbiq et</button>
+                </div>
+                <div id="promo-msg" class="text-[11px] mt-1"></div>
+              </div>
+            </div>
+          `;
+
+          const deliveryFee = subtotal > 150 ? 0 : 10;
+          const discountVal = subtotal * promoDiscount;
+          const finalTotal = subtotal - discountVal + deliveryFee;
+
+          footer.innerHTML = `
+            <div class="space-y-1.5 text-xs text-slate-300">
+              <div class="flex justify-between"><span>Məhsul dəyəri:</span><span class="text-white font-semibold tabular-nums">${subtotal.toFixed(2)} ₼</span></div>
+              ${promoDiscount > 0 ? `<div class="flex justify-between text-emerald-400 font-semibold"><span>Promo endirim (10%):</span><span class="tabular-nums">-${discountVal.toFixed(2)} ₼</span></div>` : ''}
+              <div class="flex justify-between"><span>Çatdırılma:</span><span class="tabular-nums ${deliveryFee === 0 ? 'text-emerald-400' : 'text-white'}">${deliveryFee === 0 ? 'PULSUZ (150₼-dən yuxarı)' : `${deliveryFee.toFixed(2)} ₼`}</span></div>
+              <div class="flex justify-between pt-2 border-t border-white/5 text-sm font-bold text-white"><span>Yekun:</span><span class="text-lg text-[#FF5E1E] tabular-nums font-black">${finalTotal.toFixed(2)} ₼</span></div>
+            </div>
+            <button onclick="setCheckoutMode(true)" class="w-full py-3.5 rounded-xl bg-[#FF5E1E] hover:bg-[#FF6B00] text-white font-bold text-sm transition-all shadow-lg flex items-center justify-center gap-2">
+              <span>Sifarişi Rəsmiləşdir</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          `;
+        }
+
+        lucide.createIcons();
+      }
+
+      function addToCart(productId, qty = 1) {
+        const prod = PRODUCTS.find(p => p.id === productId);
+        if (!prod) return;
+        const existing = cart.find(i => i.product.id === productId);
+        if (existing) {
+          existing.quantity += qty;
+        } else {
+          cart.push({ product: prod, quantity: qty });
+        }
+        updateCartUI();
+        showToast('Səbətə əlavə olundu', `${prod.name} səbətə əlavə edildi.`);
+      }
+
+      function changeQty(productId, delta) {
+        const item = cart.find(i => i.product.id === productId);
+        if (!item) return;
+        item.quantity += delta;
+        if (item.quantity <= 0) {
+          cart = cart.filter(i => i.product.id !== productId);
+        }
+        updateCartUI();
+      }
+
+      function removeFromCart(productId) {
+        cart = cart.filter(i => i.product.id !== productId);
+        updateCartUI();
+        showToast('Məhsul silindi', 'Məhsul səbətdən xaric edildi.', 'info');
+      }
+
+      function clearCart() {
+        cart = [];
+        updateCartUI();
+      }
+
+      function toggleCart(open) {
+        document.getElementById('cart-drawer').classList.toggle('hidden', !open);
+        if (open) {
+          isCheckoutMode = false;
+          updateCartUI();
+        }
+      }
+
+      function setCheckoutMode(val) {
+        isCheckoutMode = val;
+        document.getElementById('cart-header-title').innerText = val ? 'Sifarişin Rəsmiləşdirilməsi' : 'Səbət';
+        updateCartUI();
+      }
+
+      function applyPromo() {
+        const val = document.getElementById('promo-input').value.trim().toUpperCase();
+        const msg = document.getElementById('promo-msg');
+        if (val === 'TEMIR10') {
+          promoDiscount = 0.10;
+          msg.className = 'text-[11px] text-emerald-400 mt-1';
+          msg.innerText = '10% endirim tətbiq olundu!';
+          updateCartUI();
+        } else {
+          msg.className = 'text-[11px] text-rose-400 mt-1';
+          msg.innerText = 'Yanlış kod. "TEMIR10" yoxlayın.';
+        }
+      }
+
+      function handleCheckoutSubmit(e) {
+        e.preventDefault();
+        const orderId = `TEM-${Math.floor(100000 + Math.random() * 900000)}`;
+        clearCart();
+        toggleCart(false);
+        showToast('Sifarişiniz təsdiqləndi!', `Sifariş № ${orderId}. Əməliyyatçımız sizinlə əlaqə saxlayacaq.`, 'success');
+      }
+
+      // Modals
+      function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+        lucide.createIcons();
+      }
+      function closeModal(id) {
+        document.getElementById(id).classList.add('hidden');
+      }
+
+      function openProductModal(productId) {
+        const p = PRODUCTS.find(x => x.id === productId);
+        if (!p) return;
+        const body = document.getElementById('product-modal-body');
+        body.innerHTML = `
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <div class="relative rounded-2xl overflow-hidden bg-[#1B202D] aspect-square flex items-center justify-center border border-white/5">
+              <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover" />
+              ${p.discountPercent ? `<div class="absolute top-3 left-3 px-3 py-1 rounded-md bg-[#FF5E1E] text-white text-xs font-black">-${p.discountPercent}% ENDİRİM</div>` : ''}
+            </div>
+            <div class="flex flex-col justify-between">
+              <div>
+                <div class="text-xs text-slate-400 mb-1"><span class="text-[#FF5E1E] font-bold">${p.brand}</span> · <span>${p.category}</span></div>
+                <h2 class="text-xl sm:text-2xl font-bold text-white mb-2">${p.name}</h2>
+                <div class="flex items-center gap-2 text-xs text-slate-300 mb-3 pb-3 border-b border-white/10">
+                  <span class="flex items-center gap-1 text-amber-400 font-bold"><i data-lucide="star" class="w-4 h-4 fill-amber-400"></i> ${p.rating.toFixed(1)}</span>
+                  <span>·</span>
+                  <span>${p.reviewCount} rəy</span>
+                  <span>·</span>
+                  <span class="text-emerald-400 font-semibold">Anbarda var</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">${p.description}</p>
+                <div class="mb-4 bg-[#181C26] rounded-xl p-3 text-xs space-y-1.5 border border-white/5">
+                  <div class="font-bold text-slate-400 uppercase text-[10px]">Texniki Parametrlər</div>
+                  ${Object.entries(p.specs).map(([k, v]) => `<div class="flex justify-between text-slate-300"><span class="text-slate-400">${k}:</span><span>${v}</span></div>`).join('')}
+                </div>
+              </div>
+              <div class="pt-3 border-t border-white/10">
+                <div class="flex items-baseline justify-between mb-4">
+                  <div>
+                    <span class="text-2xl font-black text-white tabular-nums">${p.price.toFixed(2)} ₼</span>
+                    <span class="text-xs text-slate-400 block">/ ${p.unit}</span>
+                  </div>
+                </div>
+                <button onclick="addToCart('${p.id}', 1); closeModal('product-modal');" class="w-full py-3.5 rounded-xl font-bold text-sm bg-[#FF5E1E] hover:bg-[#FF6B00] text-white shadow-lg flex items-center justify-center gap-2">
+                  <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                  <span>Səbətə əlavə et</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+        openModal('product-modal');
+      }
+
+      function openMasterModal(masterId) {
+        const m = MASTERS.find(x => x.id === masterId);
+        if (!m) return;
+        const body = document.getElementById('master-modal-body');
+        body.innerHTML = `
+          <div class="space-y-6">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 p-5 rounded-2xl bg-[#181C28] border border-white/5">
+              <img src="${m.avatar}" alt="${m.name}" class="w-20 h-20 rounded-2xl object-cover ring-2 ring-[#FF5E1E]/40" />
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2">
+                  <h2 class="text-xl sm:text-2xl font-bold text-white truncate">${m.name}</h2>
+                  ${m.verified ? `<span class="text-[11px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full">✓ Yoxlanılmış Usta</span>` : ''}
+                </div>
+                <p class="text-sm font-semibold text-[#FF5E1E] mt-0.5">${m.specialty}</p>
+                <div class="flex items-center gap-3 text-xs text-slate-300 mt-2">
+                  <span class="text-amber-400 font-bold">★ ${m.rating.toFixed(2)}</span>
+                  <span>·</span>
+                  <span>${m.experience} il təcrübə</span>
+                  <span>·</span>
+                  <span>${m.completed}+ layihə</span>
+                </div>
+              </div>
+              <div class="shrink-0 flex flex-col gap-2 w-full sm:w-auto">
+                <a href="tel:${m.phone}" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#FF5E1E] hover:bg-[#FF6B00] text-white text-xs font-bold transition-all shadow-md">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                  <span>Birbaşa Zəng Et</span>
+                </a>
+                <div class="text-center text-xs text-slate-400 font-mono">${m.phone}</div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-xs font-bold uppercase text-slate-400">Usta Haqqında</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed bg-[#12151D] p-4 rounded-xl border border-white/5">${m.bio}</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-[#171B26] border border-white/10">
+              <h3 class="text-base font-bold text-white mb-2">Ustaya Baxış və Müraciət Sorğusu</h3>
+              <p class="text-xs text-slate-400 mb-4">Məlumatlarınızı daxil edin. Usta 15 dəqiqə ərzində sizinlə əlaqə saxlayacaq.</p>
+              <form onsubmit="handleMasterBookingSubmit(event, '${m.name}')" class="space-y-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <input type="text" required placeholder="Adınız və Soyadınız *" class="bg-[#111319] border border-white/10 text-white text-xs rounded-xl px-3.5 py-2.5 outline-none focus:border-[#FF5E1E]" />
+                  <input type="tel" required value="+994 " class="bg-[#111319] border border-white/10 text-white text-xs rounded-xl px-3.5 py-2.5 outline-none focus:border-[#FF5E1E]" />
+                </div>
+                <textarea rows="2" placeholder="Görüləcək iş haqqında qeyd..." class="w-full bg-[#111319] border border-white/10 text-white text-xs rounded-xl px-3.5 py-2.5 outline-none focus:border-[#FF5E1E] resize-none"></textarea>
+                <button type="submit" class="w-full py-3 rounded-xl bg-[#FF5E1E] hover:bg-[#FF6B00] text-white font-bold text-xs sm:text-sm shadow-md">Müraciəti Göndər</button>
+              </form>
+            </div>
+          </div>
+        `;
+        openModal('master-modal');
+      }
+
+      function handleMasterBookingSubmit(e, masterName) {
+        e.preventDefault();
+        closeModal('master-modal');
+        showToast('Müraciət qəbul olundu!', `${masterName} 15 dəqiqə ərzində sizinlə əlaqə saxlayacaq.`, 'success');
+      }
+
+      // Filter Handlers
+      function filterCategory(slug) {
+        activeCategory = slug;
+        renderCategoryTabs();
+        renderProducts();
+        renderCategories();
+        const el = document.getElementById('products');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      function filterBrand(brand) {
+        selectedBrand = brand;
+        renderBrandChips();
+        renderProducts();
+      }
+
+      function filterMasterSpecialty(specialty) {
+        activeMasterSpecialty = specialty;
+        renderMasters();
+      }
+
+      function handleSortChange(val) {
+        currentSort = val;
+        renderProducts();
+      }
+
+      function resetFilters() {
+        activeCategory = 'all';
+        selectedBrand = 'all';
+        currentSearch = '';
+        document.getElementById('search-input').value = '';
+        renderCategoryTabs();
+        renderBrandChips();
+        renderProducts();
+      }
+
+      // Search Autocomplete
+      function handleSearchInput(query) {
+        currentSearch = query;
+        const clearBtn = document.getElementById('clear-search-btn');
+        clearBtn.classList.toggle('hidden', query.length === 0);
+
+        const dropdown = document.getElementById('search-dropdown');
+        const box = document.getElementById('search-results-box');
+
+        if (query.trim().length > 1) {
+          const results = PRODUCTS.filter(p =>
+            p.name.toLowerCase().includes(query.toLowerCase()) ||
+            p.brand.toLowerCase().includes(query.toLowerCase()) ||
+            p.category.toLowerCase().includes(query.toLowerCase())
+          ).slice(0, 5);
+
+          if (results.length > 0) {
+            dropdown.classList.remove('hidden');
+            box.innerHTML = `
+              <div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 px-3 py-1">Tapılan Məhsullar (${results.length})</div>
+              ${results.map(r => `
+                <div onclick="openProductModal('${r.id}'); showSearchDropdown(false);" class="flex items-center gap-3 p-2 hover:bg-white/5 rounded-xl cursor-pointer">
+                  <img src="${r.image}" class="w-8 h-8 rounded-lg object-cover" />
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs font-semibold text-white truncate">${r.name}</div>
+                    <div class="text-[10px] text-slate-400">${r.brand} · ${r.category}</div>
+                  </div>
+                  <div class="text-xs font-bold text-white tabular-nums">${r.price.toFixed(2)} ₼</div>
+                </div>
+              `).join('')}
+            `;
+          } else {
+            dropdown.classList.remove('hidden');
+            box.innerHTML = `<div class="p-3 text-xs text-slate-400 text-center">"${query}" üzrə məhsul tapılmadı.</div>`;
+          }
+        } else {
+          dropdown.classList.add('hidden');
+        }
+
+        renderProducts();
+      }
+
+      function showSearchDropdown(show) {
+        if (!show) {
+          setTimeout(() => document.getElementById('search-dropdown').classList.add('hidden'), 200);
+        }
+      }
+
+      function clearSearch() {
+        document.getElementById('search-input').value = '';
+        handleSearchInput('');
+      }
+
+      // Hero Slider Controls
+      function setSlide(index) {
+        currentSlideIndex = index;
+        for (let i = 0; i < 3; i++) {
+          const slide = document.getElementById(`slide-${i}`);
+          const dot = document.getElementById(`dot-${i}`);
+          if (i === index) {
+            slide.classList.remove('opacity-0', 'pointer-events-none');
+            slide.classList.add('opacity-100');
+            dot.className = 'h-2 rounded-full transition-all duration-300 w-8 bg-[#FF5E1E]';
+          } else {
+            slide.classList.add('opacity-0', 'pointer-events-none');
+            slide.classList.remove('opacity-100');
+            dot.className = 'h-2 rounded-full transition-all duration-300 w-2 bg-white/30 hover:bg-white/50';
+          }
+        }
+      }
+
+      function nextSlide() {
+        setSlide((currentSlideIndex + 1) % 3);
+      }
+      function prevSlide() {
+        setSlide((currentSlideIndex - 1 + 3) % 3);
+      }
+
+      // Auth simulation
+      function setAuthRole(role) {
+        const client = document.getElementById('auth-role-client');
+        const master = document.getElementById('auth-role-master');
+        if (role === 'client') {
+          client.className = 'flex-1 py-2 rounded-lg text-xs font-bold bg-[#FF5E1E] text-white';
+          master.className = 'flex-1 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-white';
+        } else {
+          master.className = 'flex-1 py-2 rounded-lg text-xs font-bold bg-[#FF5E1E] text-white';
+          client.className = 'flex-1 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-white';
+        }
+      }
+
+      function handleAuthSubmit(e) {
+        e.preventDefault();
+        closeModal('auth-modal');
+        document.getElementById('nav-user-label').innerText = 'Şəxsi Kabinet';
+        showToast('Xoş gəlmisiniz!', 'temir.az sisteminə uğurla daxil oldunuz.', 'success');
+      }
+
+      function toggleMobileMenu() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      }
+
+      // Toast System
+      function showToast(title, description = '', type = 'success') {
+        const container = document.getElementById('toast-container');
+        const id = 'toast-' + Date.now();
+        const toast = document.createElement('div');
+        toast.id = id;
+        toast.className = 'pointer-events-auto flex items-start gap-3 p-4 rounded-2xl glass-panel bg-[#161922]/95 border border-white/10 shadow-2xl text-white transition-all';
+        toast.innerHTML = `
+          <div class="shrink-0 mt-0.5 text-emerald-400">✓</div>
+          <div class="flex-1 min-w-0">
+            <h4 class="text-xs sm:text-sm font-bold text-white tracking-tight">${title}</h4>
+            ${description ? `<p class="text-xs text-slate-300 mt-0.5 leading-snug">${description}</p>` : ''}
+          </div>
+          <button onclick="document.getElementById('${id}').remove()" class="text-slate-400 hover:text-white p-1">✕</button>
+        `;
+        container.appendChild(toast);
+        setTimeout(() => toast.remove(), 4000);
+      }
+
+      // 5. INITIALIZATION
+      document.addEventListener('DOMContentLoaded', () => {
+        renderCategories();
+        renderCategoryTabs();
+        renderBrandChips();
+        renderProducts();
+        renderMasters();
+        updateCalculator();
+        updateCartUI();
+        lucide.createIcons();
+
+        // Auto slide interval
+        setInterval(() => {
+          nextSlide();
+        }, 6000);
+      });
+    </script>
+  </body>
+</html>
